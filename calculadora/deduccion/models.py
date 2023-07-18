@@ -15,3 +15,8 @@ class Deduccion(models.Model):
     def __init__(self):
         iva=self.precio*self.porcentaje/100
         self.resultado=self.precio-iva
+
+class DeduccionForm(ModelForm):
+    class Meta:
+        model=Deduccion
+        fields=['precio', 'porcentaje']
