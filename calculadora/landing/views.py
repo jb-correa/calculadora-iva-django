@@ -15,7 +15,7 @@ def Home(request):
         else:
             form=suma()
         return render(request, 'suma/suma.html', {"form": form})
-    
+
     def deducir(request):
         form=DeduccionForm()
         if request.method =='POST':
@@ -25,6 +25,6 @@ def Home(request):
             redirect("Deduccion")
         else:
             form=Deduccion()
-        return render(request, 'deduccion/deduccion.html', {"form": form})
+    return render(request, 'deduccion/deduccion.html', {"form": form})
 
     return render(request, 'landing/home.html')
