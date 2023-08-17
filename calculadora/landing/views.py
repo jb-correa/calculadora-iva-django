@@ -25,6 +25,6 @@ def Home(request):
             redirect("Deduccion")
         else:
             form=Deduccion()
-    return render(request, 'deduccion/deduccion.html', {"form": form})
+        return render(request, 'deduccion/deduccion.html', {"form": form})
 
     return render(request, 'landing/home.html')
