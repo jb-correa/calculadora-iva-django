@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'landing',
     'suma',
     'deduccion',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
