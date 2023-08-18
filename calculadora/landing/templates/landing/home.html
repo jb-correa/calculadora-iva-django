@@ -23,10 +23,11 @@
           <div class="container">
             <h1>Sumar IVA</h1>
             <br>
+            <div style="width: 75%; margin: auto;">
             <form action="" method="post" style="color: white">
               {% csrf_token %}
                  
-              <div style="width: 75%; margin: auto;">
+              
               {{form|crispy}}
         
              
@@ -49,10 +50,11 @@
           <div class="container">
             <h1>Deducir IVA</h1>
             <br>
+            <div style="width: 75%; margin: auto;"></div>
             <form action="" method="post" style="color: white">
               {% csrf_token %}
                  
-              <div style="width: 75%; margin: auto;">
+              
               {{form|crispy}}
         
              
@@ -64,8 +66,8 @@
                       {% endfor %}
                 {% endif %}
               </div>
-              </div>
             </form>
+          </div>
           </div>
 
         </section>
