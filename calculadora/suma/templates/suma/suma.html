@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de IVA</title>
 </head>
+
+{% extends "landing/base.html" %}
 <body>
 
     {% load static %}
+    {% load crispy_forms_tags %}
 
 
     {% block content %}
     <section class="container" style="text-align: center;">
-        <h5>El resultado de tu suma es:</h5>
+        <form action="" method="POST" style="text-align:center">
+            {% csrf_token %}
+            <div style="width: 75%; margin: auto;">
+                {{form|crispy}}
+               
+            <button type="submit" class="btn btn-success" style="text-align: center;">Sumar</button>
+            </div>
+            
+
+        </form>
     </section>
     
     {% endblock %}

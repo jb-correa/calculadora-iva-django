@@ -13,8 +13,9 @@ class Suma (models.Model):
     def __str__(self):
         return "Suma del día "+self.created
     def __init__(self):
-        iva=self.precio*self.porcentaje/100
-        self.resultado=self.precio+iva
+        ##iva=self.precio*self.porcentaje/100
+        ##self.resultado=self.precio+iva
+        return self.resultado
 
 class SumaForm(ModelForm):
     class Meta:
