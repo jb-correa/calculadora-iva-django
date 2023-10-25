@@ -1,0 +1,25 @@
+<html>
+
+<head>
+
+  <title>Ingresa tu suma</title>
+
+</head>
+
+{% extends "landing/base.html" %}
+
+<body>
+
+    {% load static %}
+
+    {% block content %}
+    <section class="container" style="text-align: center; margin-top: 400 px;">
+        <div>
+            <h5 style="text-align: center;"> El resultado de tu suma es: </h5>
+            <p>{{suma.resultado}}</p>
+        </div>
+    </section>
+  
+    {% endblock %}
+
+</body>

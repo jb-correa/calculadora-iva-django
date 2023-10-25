@@ -1,0 +1,41 @@
+<html>
+
+<head>
+
+  <title>Inicio</title>
+
+</head>
+
+{% extends "landing/base.html" %}
+
+<body>
+
+  
+
+    {% load static %}
+
+    {% block content %}
+    
+    <section class="container" style="text-align: center;">
+        <div>
+            <br>
+            <br>
+            <button class="btn btn-success" style="margin-bottom:15px; margin-right: 15px; color: green;">
+                <a href="{% url 'Suma' %}">Sumar el IVA</a>
+            </button>
+            <br>
+            <br>
+        </div>
+    </section>
+
+    <section class="container" style="text-align: center;">
+        <div>
+            <button class="btn btn-success" style="margin-bottom:15px; margin-right: 15px; color: blue;">
+                <a href="{% url 'Deduccion' %}">Deducir el IVA</a>
+            </button>
+        </div>
+    </section>
+
+    {% endblock %}
+
+</body>
