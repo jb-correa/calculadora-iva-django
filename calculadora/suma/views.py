@@ -1,7 +1,7 @@
 from django.shortcuts import redirect, render
 from .models import Suma, SumaForm
 
-def sumar(request):
+def suma(request):
     form = SumaForm()
     if request.method == 'POST':
         form = SumaForm(request.POST)
