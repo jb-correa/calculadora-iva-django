@@ -11,8 +11,8 @@ class Suma(models.Model):
     def __str__(self):
         return f'Suma del día {self.fecha.day, self.fecha.month, self.fecha.year}'
     class Meta:
-        verbose_name="comida"
-        verbose_name_plural="comidas"
+        verbose_name="suma"
+        verbose_name_plural="sumas"
         ordering=['fecha']
         
 

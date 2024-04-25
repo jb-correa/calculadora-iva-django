@@ -11,7 +11,7 @@ class Deduccion(models.Model):
         verbose_name_plural = "Deducciones"
         ordering=['fecha']
     def __str__(self) :
-        return f'Deduccion del día {self.fecha.day, self.fecha.month, self.fecha.year}'
+        return "Deduccion del día" +{self.fecha.day, self.fecha.month, self.fecha.year}
     
 class DeduccionForm(ModelForm):
     class Meta:
