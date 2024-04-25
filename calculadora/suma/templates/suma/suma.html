@@ -17,15 +17,15 @@
 
     {% block content %}
     
-      <div class="container" style="width: 75%; margin: auto;">
+      <div class="container" style="width: 75%; margin: auto; margin-top: 30px;">
     <form action="" method="post" style="color: white; text-align: center;">
       {% csrf_token %}
          
-      <div style="width: 75%; margin: auto;">
+      <div style="width: 50%; margin: auto;">
       {{form|crispy}}
 
      
-      <button type="submit" class="btn btn-success" style="text-align: center;">Sumar</button>
+      <button type="submit" class="btn btn-success" style="text-align: center; margin-top: 30px;">Sumar</button>
       </div>
     </form>
   </div>
